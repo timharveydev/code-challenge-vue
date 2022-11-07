@@ -24,7 +24,7 @@ export default function useCustomers() {
   // Get individual Customer
   const getCustomer = async (id) => {
     const response = await axios.get('customers/' + id);
-    customer.value = response;
+    customer.value = response.data.data;
   }
 
   // Store new Customer
@@ -49,6 +49,8 @@ export default function useCustomers() {
     } catch (error) {
       if (error.response.status === 422) {
         errors.value = error.response.data.errors;
+      } else {
+        console.log(error);
       }
     }
   }
