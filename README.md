@@ -45,4 +45,5 @@ Clicking on the 'Edit' button at the end of one of the Customer rows will take y
 
 
 Note 1 - the search input functionality has not yet been implemented.
+
 Note 2 - while customers are added to the database successfully, an error occurs ("error.response is not defined...") which prevents you from being redirected back to the homepage. I'm still trying to solve this.
