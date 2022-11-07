@@ -37,12 +37,12 @@ A brief overview of the files and folders used in this project::
 
 This app is (hopefully) very intuitive to use.
 
-From the homepage you can view details for all of the currently existing customers. You can also search Customer details using the search input provided.*
+From the homepage you can view details for all of the currently existing customers. You can also search Customer details using the search input provided. (see 'Note 1' at bottom)
 
-Clicking on the 'Create Customer' button will take you to a form where you can enter details for a new Customer. Clicking 'Submit' will add the customer to the database and redirect you back to the homepage.**
+Clicking on the 'Create Customer' button will take you to a form where you can enter details for a new Customer. Clicking 'Submit' will add the customer to the database and redirect you back to the homepage. (see 'Note 2' at bottom)
 
 Clicking on the 'Edit' button at the end of one of the Customer rows will take you to a form which is pre-populated with that Customer's details. Simply change the details as desired and click 'Update' to update that Customer. You will then be redirected back to the homepage.
 
 
-* the search input functionality has not yet been implemented.
-** while customers are added to the database successfully, an error occurs ("error.response is not defined...") which prevents you from being redirected back to the homepage. I'm still trying to solve this.
+Note 1 - the search input functionality has not yet been implemented.
+Note 2 - while customers are added to the database successfully, an error occurs ("error.response is not defined...") which prevents you from being redirected back to the homepage. I'm still trying to solve this.
