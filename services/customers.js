@@ -36,7 +36,7 @@ export default function useCustomers() {
       if (error.response.status === 422) {
         errors.value = error.response.data.errors;
       } else {
-        console.log(error.message);
+        console.log(error);
       }
     }
   }
