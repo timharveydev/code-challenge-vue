@@ -6,10 +6,17 @@ import SearchInput from '../../components/forms/SearchInput.vue';
 import InfoBox from '../../components/InfoBox.vue';
 import useCustomers from '../../../services/customers';
 import { onMounted } from 'vue';
+import { ref } from 'vue';
+import { watch } from 'vue';
 
 const { customers, getCustomers } = useCustomers();
+const keyword = ref(null);
 
-onMounted(() => getCustomers());
+onMounted(() => getCustomers(keyword.value));
+
+watch(keyword, (before, after) => {
+  getCustomers(keyword.value);
+});
 
 </script>
 
@@ -29,6 +36,7 @@ onMounted(() => getCustomers());
         <SearchInput
             label="Search"
             placeholder="Search Customers, Policies and Insurers"
+            v-model="keyword"
         ></SearchInput>
 
         <!-- Table -->

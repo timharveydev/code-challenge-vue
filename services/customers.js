@@ -15,9 +15,9 @@ export default function useCustomers() {
   const errors = ref({});
   const router = useRouter;
 
-  // Get all Customers
-  const getCustomers = async () => {
-    const response = await axios.get('customers');
+  // Get all Customers - also accepts search keyword
+  const getCustomers = async (keyword) => {
+    const response = await axios.get('customers', {params: {searchTerm: keyword}});
     customers.value = response.data.data;
   }
 
