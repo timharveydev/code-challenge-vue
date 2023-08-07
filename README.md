@@ -10,7 +10,7 @@ To set up this project on your local machine, follow the steps below:
 
 NOTE - both the Laravel and Vue projects should be running on the server together in order for the app to function.
 
-If everything worked correctly, you should now be presented with the default Laravel homepage.
+If everything worked correctly, you should now be presented with the main page.
 
 
 ## KEY FOLDERS & FILES
